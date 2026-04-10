@@ -118,5 +118,91 @@ int main(){
   printf("PIB per Capita: Carta 1 venceu (%d)\n", PIB_per_capita_1 > PIB_per_capita_2);
   printf("Super Poder: Carta 1 venceu (%d)\n", super_poder_1 > super_poder_2);  
 
+  // Comparações a partir de estruturas de decisão composta
+
+  if(populacao_1 > populacao_2){
+    printf("\n Comparação de cartas (Atributo: População): \n");
+    printf("Carta 1 - Fortaleza (CE): 2.578.483 habitantes\n");
+    printf("Carta 2 - Recife (PE): 1.588.376 habitantes\n");
+    printf("Carta 1 (Fortaleza) venceu!\n");
+  }else {
+    printf("\n Comparação de cartas (Atributo: População): \n");
+    printf("Carta 1 - Fortaleza (CE): 2.578.483 habitantes\n");
+    printf("Carta 2 - Recife (PE): 1.588.376 habitantes\n");
+    printf("Carta 2 (Recife) venceu!\n");
+  }
+
+  if(area_1 > area_2){
+    printf("\n Comparação de cartas (Atributo: Área): \n");
+    printf("Carta 1 - Fortaleza (CE): 314.9 km²\n");
+    printf("Carta 2 - Recife (PE): 218.9 km²\n");
+    printf("Carta 1 (Fortaleza) venceu!\n");
+  }else {
+    printf("\n Comparação de cartas (Atributo: Área): \n");
+    printf("Carta 1 - Fortaleza (CE): 314.9 km²\n");
+    printf("Carta 2 - Recife (PE): 218.9 km²\n");
+    printf("Carta 2 (Recife) venceu!\n");
+  }
+
+  if(PIB_1 > PIB_2){
+    printf("\n Comparação de cartas (Atributo: PIB): \n");
+    printf("Carta 1 - Fortaleza (CE): 86.9 milhões de reais\n");
+    printf("Carta 2 - Recife (PE): 66.3 milhões de reais\n");
+    printf("Carta 1 (Fortaleza) venceu!\n");
+  }else {
+    printf("\n Comparação de cartas (Atributo: PIB): \n");
+    printf("Carta 1 - Fortaleza (CE): 86.9 milhões de reais\n");
+    printf("Carta 2 - Recife (PE): 66.3 milhões de reais\n");
+    printf("Carta 2 (Recife) venceu!\n");
+  }
+
+  if(numero_de_pontos_turisticos_1 > numero_de_pontos_turisticos_2){
+    printf("\n Comparação de cartas (Atributo: Número de Pontos Turísticos): \n");
+    printf("Carta 1 - Fortaleza (CE): 55 locais\n");
+    printf("Carta 2 - Recife (PE): 50 locais\n");
+    printf("Carta 1 (Fortaleza) venceu!\n");
+  }else {
+    printf("\n Comparação de cartas (Atributo: Número de Pontos Turísticos): \n");
+    printf("Carta 1 - Fortaleza (CE): 55 locais\n");
+    printf("Carta 2 - Recife (PE): 50 locais\n");
+    printf("Carta 2 (Recife) venceu!\n");
+  }
+
+  if(PIB_per_capita_1 > PIB_per_capita_2){
+    printf("\n Comparação de cartas (Atributo: PIB Per Capita): \n");
+    printf("Carta 1 - Fortaleza (CE): 33.701,99 reais\n");
+    printf("Carta 2 - Recife (PE): 41.740,75 reais\n");
+    printf("Carta 1 (Fortaleza) venceu!\n");
+  }else {
+    printf("\n Comparação de cartas (Atributo: PIB Per Capita): \n");
+    printf("Carta 1 - Fortaleza (CE): 33.701,99 reais\n");
+    printf("Carta 2 - Recife (PE): 41.740,75 reais\n");
+    printf("Carta 2 (Recife) venceu!\n");
+  }
+
+  if(densidade_populacional_1 < densidade_populacional_2){
+    printf("\n Comparação de cartas (Atributo: Densidade Populacional): \n");
+    printf("Carta 1 - Fortaleza (CE): 8188.26 hab/km²\n");
+    printf("Carta 2 - Recife (PE): 7256.17 hab/km²\n");
+    printf("Carta 1 (Fortaleza) venceu!\n");
+  }else {
+    printf("\n Comparação de cartas (Atributo: Densidade Populacional): \n");
+    printf("Carta 1 - Fortaleza (CE): 8188.26 hab/km²\n");
+    printf("Carta 2 - Recife (PE): 7256.17 hab/km²\n");
+    printf("Carta 2 (Recife) venceu!\n");
+  }
+
+  if(super_poder_1 > super_poder_2){
+    printf("\n Comparação de cartas (Atributo: Super Poder): \n");
+    printf("Carta 1 - Fortaleza (CE): 2612636.75 pontos\n");
+    printf("Carta 2 - Recife (PE): 1630452.00 pontos\n");
+    printf("Carta 1 (Fortaleza) venceu!\n");
+  }else {
+    printf("\n Comparação de cartas (Atributo: Super Poder): \n");
+    printf("Carta 1 - Fortaleza (CE): 2612636.75 pontos\n");
+    printf("Carta 2 - Recife (PE): 1630452.00 pontos\n");
+    printf("Carta 2 (Recife) venceu!\n");
+  }
+
 return 0;
 } 
