@@ -120,88 +120,81 @@ int main(){
 
   // Comparações a partir de estruturas de decisão composta
 
+  printf("\n Comparação de cartas (Atributo: População): \n");
+  
+  printf("Carta 1 - %s (%s): %lu habitantes\n", nome_da_cidade_1, estado_1, populacao_1);
+  printf("Carta 2 - %s (%s): %lu habitantes\n", nome_da_cidade_2, estado_2, populacao_2);
+
   if(populacao_1 > populacao_2){
-    printf("\n Comparação de cartas (Atributo: População): \n");
-    printf("Carta 1 - Fortaleza (CE): 2.578.483 habitantes\n");
-    printf("Carta 2 - Recife (PE): 1.588.376 habitantes\n");
-    printf("Carta 1 (Fortaleza) venceu!\n");
+    printf("Resultado: Carta 1 (%s) venceu!\n", nome_da_cidade_1);
   }else {
-    printf("\n Comparação de cartas (Atributo: População): \n");
-    printf("Carta 1 - Fortaleza (CE): 2.578.483 habitantes\n");
-    printf("Carta 2 - Recife (PE): 1.588.376 habitantes\n");
-    printf("Carta 2 (Recife) venceu!\n");
+    printf("Resultado: Carta 2 (%s) venceu!\n", nome_da_cidade_2);
   }
+
+  printf("\n Comparação de cartas (Atributo: Área): \n");
+  
+  printf("Carta 1 - %s (%s): %.2f km²\n", nome_da_cidade_1, estado_1, area_1);
+  printf("Carta 2 - %s (%s): %.2f km²\n", nome_da_cidade_2, estado_2, area_2);
 
   if(area_1 > area_2){
-    printf("\n Comparação de cartas (Atributo: Área): \n");
-    printf("Carta 1 - Fortaleza (CE): 314.9 km²\n");
-    printf("Carta 2 - Recife (PE): 218.9 km²\n");
-    printf("Carta 1 (Fortaleza) venceu!\n");
+    printf("Resultado: Carta 1 (%s) venceu!\n", nome_da_cidade_1);
   }else {
-    printf("\n Comparação de cartas (Atributo: Área): \n");
-    printf("Carta 1 - Fortaleza (CE): 314.9 km²\n");
-    printf("Carta 2 - Recife (PE): 218.9 km²\n");
-    printf("Carta 2 (Recife) venceu!\n");
+    printf("Resultado: Carta 2 (%s) venceu!\n", nome_da_cidade_2);
   }
+
+  printf("\n Comparação de cartas (Atributo: PIB): \n");
+  
+  printf("Carta 1 - %s (%s): %.2f milhões de reais\n", nome_da_cidade_1, estado_1, PIB_1);
+  printf("Carta 2 - %s (%s): %.2f milhões de reais\n", nome_da_cidade_2, estado_2, PIB_2);
 
   if(PIB_1 > PIB_2){
-    printf("\n Comparação de cartas (Atributo: PIB): \n");
-    printf("Carta 1 - Fortaleza (CE): 86.9 milhões de reais\n");
-    printf("Carta 2 - Recife (PE): 66.3 milhões de reais\n");
-    printf("Carta 1 (Fortaleza) venceu!\n");
+    printf("Resultado: Carta 1 (%s) venceu!\n", nome_da_cidade_1);
   }else {
-    printf("\n Comparação de cartas (Atributo: PIB): \n");
-    printf("Carta 1 - Fortaleza (CE): 86.9 milhões de reais\n");
-    printf("Carta 2 - Recife (PE): 66.3 milhões de reais\n");
-    printf("Carta 2 (Recife) venceu!\n");
+    printf("Resultado: Carta 2 (%s) venceu!\n", nome_da_cidade_2);
   }
+
+  printf("\n Comparação de cartas (Atributo: Número de Pontos Turísticos): \n");
+  
+  printf("Carta 1 - %s (%s): %.d locais\n", nome_da_cidade_1, estado_1, numero_de_pontos_turisticos_1);
+  printf("Carta 2 - %s (%s): %.d locais\n", nome_da_cidade_2, estado_2, numero_de_pontos_turisticos_2);
 
   if(numero_de_pontos_turisticos_1 > numero_de_pontos_turisticos_2){
-    printf("\n Comparação de cartas (Atributo: Número de Pontos Turísticos): \n");
-    printf("Carta 1 - Fortaleza (CE): 55 locais\n");
-    printf("Carta 2 - Recife (PE): 50 locais\n");
-    printf("Carta 1 (Fortaleza) venceu!\n");
+    printf("Resultado: Carta 1 (%s) venceu!\n", nome_da_cidade_1);
   }else {
-    printf("\n Comparação de cartas (Atributo: Número de Pontos Turísticos): \n");
-    printf("Carta 1 - Fortaleza (CE): 55 locais\n");
-    printf("Carta 2 - Recife (PE): 50 locais\n");
-    printf("Carta 2 (Recife) venceu!\n");
+    printf("Resultado: Carta 2 (%s) venceu!\n", nome_da_cidade_2);
   }
+
+  printf("\n Comparação de cartas (Atributo: PIB Per Capita): \n");
+  
+  printf("Carta 1 - %s (%s): %.2f reais\n", nome_da_cidade_1, estado_1, PIB_per_capita_1);
+  printf("Carta 2 - %s (%s): %.2f reais\n", nome_da_cidade_2, estado_2, PIB_per_capita_2);
 
   if(PIB_per_capita_1 > PIB_per_capita_2){
-    printf("\n Comparação de cartas (Atributo: PIB Per Capita): \n");
-    printf("Carta 1 - Fortaleza (CE): 33.701,99 reais\n");
-    printf("Carta 2 - Recife (PE): 41.740,75 reais\n");
-    printf("Carta 1 (Fortaleza) venceu!\n");
+    printf("Resultado: Carta 1 (%s) venceu!\n", nome_da_cidade_1);
   }else {
-    printf("\n Comparação de cartas (Atributo: PIB Per Capita): \n");
-    printf("Carta 1 - Fortaleza (CE): 33.701,99 reais\n");
-    printf("Carta 2 - Recife (PE): 41.740,75 reais\n");
-    printf("Carta 2 (Recife) venceu!\n");
+    printf("Resultado: Carta 2 (%s) venceu!\n", nome_da_cidade_2);
   }
+  
+  printf("\n Comparação de cartas (Atributo: Densidade Populacional): \n");
+  
+  printf("Carta 1 - %s (%s): %.2f hab/km²\n", nome_da_cidade_1, estado_1, densidade_populacional_1);
+  printf("Carta 2 - %s (%s): %.2f hab/km²\n", nome_da_cidade_2, estado_2, densidade_populacional_2);
 
   if(densidade_populacional_1 < densidade_populacional_2){
-    printf("\n Comparação de cartas (Atributo: Densidade Populacional): \n");
-    printf("Carta 1 - Fortaleza (CE): 8188.26 hab/km²\n");
-    printf("Carta 2 - Recife (PE): 7256.17 hab/km²\n");
-    printf("Carta 1 (Fortaleza) venceu!\n");
+    printf("Resultado: Carta 1 (%s) venceu!\n", nome_da_cidade_1);
   }else {
-    printf("\n Comparação de cartas (Atributo: Densidade Populacional): \n");
-    printf("Carta 1 - Fortaleza (CE): 8188.26 hab/km²\n");
-    printf("Carta 2 - Recife (PE): 7256.17 hab/km²\n");
-    printf("Carta 2 (Recife) venceu!\n");
+    printf("Resultado: Carta 2 (%s) venceu!\n", nome_da_cidade_2);
   }
 
+  printf("\n Comparação de cartas (Atributo: Super Poder): \n");
+  
+  printf("Carta 1 - %s (%s): %.2f pontos\n", nome_da_cidade_1, estado_1, super_poder_1);
+  printf("Carta 2 - %s (%s): %.2f pontos\n", nome_da_cidade_2, estado_2, super_poder_2);
+
   if(super_poder_1 > super_poder_2){
-    printf("\n Comparação de cartas (Atributo: Super Poder): \n");
-    printf("Carta 1 - Fortaleza (CE): 2612636.75 pontos\n");
-    printf("Carta 2 - Recife (PE): 1630452.00 pontos\n");
-    printf("Carta 1 (Fortaleza) venceu!\n");
+    printf("Resultado: Carta 1 (%s) venceu!\n", nome_da_cidade_1);
   }else {
-    printf("\n Comparação de cartas (Atributo: Super Poder): \n");
-    printf("Carta 1 - Fortaleza (CE): 2612636.75 pontos\n");
-    printf("Carta 2 - Recife (PE): 1630452.00 pontos\n");
-    printf("Carta 2 (Recife) venceu!\n");
+    printf("Resultado: Carta 2 (%s) venceu!\n", nome_da_cidade_2);
   }
 
 return 0;
