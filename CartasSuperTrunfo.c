@@ -5,19 +5,26 @@
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main(){
-  // Área para definição das variáveis para armazenar as propriedades das cidades
   
+  // Área para definição das variáveis - carta 01
+
   int numero_de_pontos_turisticos_1;
   float area_1, densidade_populacional_1, inverso_densidade_populacional_1, super_poder_1;
   double PIB_1, PIB_per_capita_1;
   char estado_1[20], codigo_da_carta_1[4], nome_da_cidade_1[20];
   unsigned long int populacao_1;
 
+  // Área para definição das variáveis - carta 02
+
   int numero_de_pontos_turisticos_2;
   float area_2, densidade_populacional_2, inverso_densidade_populacional_2, super_poder_2;
   double PIB_2, PIB_per_capita_2;
   char estado_2[20], codigo_da_carta_2[4], nome_da_cidade_2[20];
   unsigned long int populacao_2;
+
+  // Área para definição das variáveis - menu interativo
+
+  int opcao;
 
   // Área para entrada de dados - carta 01
 
@@ -107,6 +114,7 @@ int main(){
   printf("PIB Per Capita: %.2f reais\n", PIB_per_capita_2);
   printf("Super Poder: %.2f\n", super_poder_2);
 
+  /* LINHAS DE CÓDIGO RELACIONADAS AO DESAFIO NOVATO - TEMA 3
   // Comparações
 
   printf("\n Comparação de Cartas: \n");
@@ -196,6 +204,51 @@ int main(){
   }else {
     printf("Resultado: Carta 2 (%s) venceu!\n", nome_da_cidade_2);
   }
+FIM DO COMENTÁRIO */
+
+// Área para o menu interativo
+
+printf("***Super Trunfo - MENU***\n");
+printf("Escolha um dos atributos abaixo para comparar\n");
+printf("1. População\n");
+printf("2. Área\n");
+printf("3. PIB\n");
+printf("4. Densidade Populacional\n");
+printf("5. PIB Per Capita\n");
+printf("6. Pontos Turísticos\n");
+printf("7. Super Poder\n");
+
+printf("Digite a opção desejada: ");
+scanf("%d", &opcao);
+
+// Área para a lógica de comparação entre as cartas (switch e if-else)
+
+printf("***Resultado da Comparação***\n");
+
+switch (opcao)
+{
+case 1:
+  printf("Atributo: População\n");
+  printf("Carta 1 - %s (%s): %lu habitantes\n", nome_da_cidade_1, estado_1, populacao_1);
+  printf("Carta 2 - %s (%s): %lu habitantes\n", nome_da_cidade_2, estado_2, populacao_2);
+
+  if (populacao_1 > populacao_2) {
+    printf("Resultado: Carta 1 (%s) venceu!\n", nome_da_cidade_1);
+  } else if (populacao_1 < populacao_2) {
+    printf("Resultado: Carta 2 (%s) venceu!\n", nome_da_cidade_2);
+  } else {
+    printf("Resultado: Empate!\n");
+  }
+  break;
+
+
+
+
+
+
+
+  
+}
 
 return 0;
 } 
